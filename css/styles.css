@@ -8,14 +8,23 @@
 
 /* цвет фона #E5E5E5 */
 
+/* надо заменить цвета на кастомные свойства */
+
+/* :root */
+
+/* стилизация по тегам -----------------------------------*/
 body {
   background-color: #e5e5e5;
   color: #212121;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* убирает все точки со всех списках без исключений */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* убирает точки со списков точечно, там где это нужно 
 .list {
@@ -26,9 +35,15 @@ ul {
 a {
   text-decoration: none;
 }
+/* ------------------------------------------------------- */
 
+/* стили лошотипа----------------------------------------- */
 .logo {
   color: #000000;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 .logo-style {
@@ -40,15 +55,26 @@ a {
   color: #2196f3;
 }
 
-/* Заголовок/герой */
-.hero-title,
-.hero-link {
+/* Заголовок/герой -------------------------------------------*/
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30;
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* стили навигации */
+/* стили навигации ------------------------------------------ */
 .site-nav a {
   color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -57,26 +83,139 @@ a {
 }
 /* можно применить стили сразу ко всем ссылка одновременно:
 .site-nav a:hover (без link)
-при помощи link можно задавать опрделеной ссылке свойства */
+при помощи link можно задавать опрделеной ссылке свойства
+можно сделать еще и так:
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+} */
 
-/* стили фильтра */
-.filtr a {
+/* подсвечивает текущию страницу, ставится один на странице */
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* стили фильтра --------------------------------------------- */
+.button {
+}
+
+.button.primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button.secondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  color: #212121;
+  text-align: center;
+}
+
+.button :hover,
+.button :focus {
+  color: #ffffff;
+}
+
+/* стили секций заголовки ------------------------------------- */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* секция преимущества/функции ----------------------------------*/
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+/* секция виды деятельности -------------------------------------- */
+.function-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* наша команда -------------------------------------------------- */
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #757575;
+}
+
+/* портфолио - примеры работ ------------------------------------- */
+.title-compani {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: #212121;
 }
 
-.filtr a:hover,
-.filtr a:focus {
+.type-work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+
+.text-compani {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
   color: #ffffff;
 }
 
 /* футер */
-.site-nav a {
-  color: #212121;
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: #2196f3;
+.contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.invitation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* ссылки "присоединяйтесь" не стилизировал, так как вместо ссылок будут кнопки */
