@@ -37,6 +37,18 @@ a {
 }
 /* ------------------------------------------------------- */
 
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 3px solid red;
+}
+/* надо секцию оборачивать в див и применять стиль контейнер
+<section>
+<div class=""> */
+
 /* стили лошотипа----------------------------------------- */
 .logo {
   color: #000000;
@@ -55,6 +67,13 @@ a {
   color: #2196f3;
 }
 
+.link.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
 /* Заголовок/герой -------------------------------------------*/
 .hero-title {
   margin-top: 0;
@@ -63,9 +82,9 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  outline: 3px solid red;
 }
 
 /* стили навигации ------------------------------------------ */
@@ -96,7 +115,9 @@ a {
 }
 
 /* стили фильтра --------------------------------------------- */
-.button {
+
+.hero.container {
+  text-align: center;
 }
 
 .button.primary {
@@ -104,11 +125,10 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #ffffff;
 }
 
-.button.secondary {
+.button a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -121,8 +141,8 @@ a {
   text-align: center;
 }
 
-.button :hover,
-.button :focus {
+.button-secondary:hover {
+  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -136,19 +156,32 @@ a {
 
 /* секция преимущества/функции ----------------------------------*/
 .features-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  background-color: aqua;
 }
 
 .features-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #757575;
 }
 
+.images-fonts {
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+display: inline-block;
 /* секция виды деятельности -------------------------------------- */
 .function-title {
   font-weight: 700;
@@ -203,7 +236,7 @@ a {
   color: #ffffff;
 }
 
-.contacts {
+.link.contacts {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -216,6 +249,14 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.developer {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ссылки "присоединяйтесь" не стилизировал, так как вместо ссылок будут кнопки */

@@ -39,20 +39,20 @@
 
       <ul class="site-nav">
         <li>
-          <a href="mailto:info@devstudio.com" class="link"
+          <a href="mailto:info@devstudio.com" class="link nav"
             >info@devstudio.com</a
           >
         </li>
 
         <li>
-          <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+          <a href="tel:380961111111" class="link nav">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
 
     <main>
       <!-- Заголовок/герой -->
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <a href="" class="button primary">Заказать услугу</a>
       </section>
@@ -60,13 +60,14 @@
       <!-- Преимущества -->
       <section>
         <!-- заголовок надо скрыть -->
-        <h2>Преимущества</h2>
+        <div class="container">
+          <!-- <h2>Преимущества</h2> -->
         <ul>
           <li>
-            <img
+            <img 
               src="./images/antenna.svg"
               alt="Изображение антены"
-              width="70"
+              width="70" class="images-fonts"
             />
             <h2 class="features-title">Внимание к деталям</h2>
             <p class="features-text">
@@ -110,6 +111,7 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Виды деятельности -->
@@ -335,11 +337,11 @@
         <span class="address">г. Киев, пр-т Леси Украинки, 26</span>
         <ul class="site-nav">
           <li>
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
+            <a href="mailto:info@example.com" class="link contacts">info@example.com</a>
           </li>
 
           <li>
-            <a href="tel:380991111111" class="link">+38 099 111 11 11</a>
+            <a href="tel:380991111111" class="link contacts">+38 099 111 11 11</a>
           </li>
         </ul>
       </address>
@@ -365,7 +367,7 @@
 
       <b class="invitation">Подпишитесь на рассылку</b>
 
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="developer">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
