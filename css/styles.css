@@ -75,6 +75,10 @@ a {
   color: #757575;
 }
 /* Заголовок/герой -------------------------------------------*/
+.hero.container {
+  text-align: center;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30;
@@ -87,8 +91,46 @@ a {
   outline: 3px solid red;
 }
 
-/* стили навигации ------------------------------------------ */
-.site-nav a {
+/* шапка/навигация ------------------------------------------ */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  margin-left: 85px;
+}
+
+.site-nav .item {
+  background-color: brown;
+  margin-right: 50px;
+}
+
+/* 3 способа - убираем маржин (отступ), крайняя геометрия всегда должна быть очищена*/
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+/* одним стилем задем всем элементам маржин 50пк, а последнему 0 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} 
+.site-nav .item + item {
+  margin-left: 50px
+}
+задаем маржин слева всем, кроме первого
+*/
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -114,12 +156,29 @@ a {
   color: #2196f3;
 }
 
-/* стили фильтра --------------------------------------------- */
-
-.hero.container {
-  text-align: center;
+.auth-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 30px;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: #2196f3;
+}
+
+/* фильтр------- --------------------------------------------- */
 .button.primary {
   font-weight: 700;
   font-size: 16px;
@@ -128,17 +187,26 @@ a {
   color: #ffffff;
 }
 
-.button a {
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/* добавляет внешний отступ (маржин) слева в 8пик всем, кроме первого элемента */
+.button .item + .item {
+  margin-left: 8px;
+}
+
+.button-secondary {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
-  background: #f5f4fa;
   border-radius: 4px;
-  padding: 6px 22px;
-  display: inline-block;
   color: #212121;
   text-align: center;
+  background: #f5f4fa;
 }
 
 .button-secondary:hover {
@@ -181,7 +249,6 @@ a {
   padding-bottom: 25px;
 }
 
-display: inline-block;
 /* секция виды деятельности -------------------------------------- */
 .function-title {
   font-weight: 700;
@@ -228,8 +295,9 @@ display: inline-block;
   color: #ffffff;
 }
 
-/* футер */
+/* футер ----------------------------------------------------------*/
 .address {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -237,10 +305,15 @@ display: inline-block;
 }
 
 .link.contacts {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.social-network {
+  display: flex;
 }
 
 .invitation {
