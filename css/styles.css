@@ -106,7 +106,7 @@ a {
   align-items: center;
 
   margin-left: 85px;
-}
+} 
 
 .site-nav .item {
   background-color: brown;
@@ -167,7 +167,7 @@ a {
 .auth-nav {
   display: flex;
   margin-left: auto;
-}
+} 
 
 .auth-nav .item + .item {
   margin-left: 30px;
@@ -249,6 +249,10 @@ a {
   padding-bottom: 25px;
 }
 
+.list-features {
+  display: flex;
+}
+
 /* секция виды деятельности -------------------------------------- */
 .function-title {
   font-weight: 700;
@@ -256,6 +260,10 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.list-occupation {
+  display: flex;
 }
 
 /* наша команда -------------------------------------------------- */
@@ -271,6 +279,17 @@ a {
   line-height: 1.19;
   color: #757575;
 }
+
+.list-team {
+  display: flex;
+}
+
+/* постоянные клиенты -------------------------------------------- */
+.list-clients {
+  display: flex;
+}
+
+
 
 /* портфолио - примеры работ ------------------------------------- */
 .title-compani {
